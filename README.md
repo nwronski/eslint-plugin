@@ -35,7 +35,7 @@ set the correct pattern for your source files (the example uses `src/**/*.js`):
 ```json
 {
   "scripts": {
-    "lint": "eslint --fix --ext .js src/**/*.js"
+    "lint": "eslint --fix --ext .js 'src/**/*.js'"
   }
 }
 ```
