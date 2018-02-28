@@ -1,6 +1,5 @@
 {
-  "name": "eslint-config-rules",
-  "private": true,
+  "name": "eslint-config-nwronski-rules",
   "version": "1.0.0",
   "description": "ESLint rule configuration for JavaScript projects",
   "main": "index.js",

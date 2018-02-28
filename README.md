@@ -1,4 +1,4 @@
-# eslint-config-rules
+# eslint-config-nwronski-rules
 
 This repo contains the ESLint rule configuration for my projects that
 use JavaScript.
@@ -11,10 +11,10 @@ Install ESLint for your project.
 npm i --save-dev eslint
 ```
 
-Install the eslint-config-rules module.
+Install the eslint-config-nwronski-rules module.
 
 ```
-npm i --save-dev eslint-config-rules
+npm i --save-dev eslint-config-nwronski-rules
 ```
 
 Create a `.eslintrc.js` file in the root folder of your project and add
@@ -22,7 +22,7 @@ the following:
 
 ```javascript
 module.exports = {
-  extends: 'rules',
+  extends: 'nwronski-rules',
 };
 
 ```
