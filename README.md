@@ -5,10 +5,10 @@ with TypeScript.
 
 ## Installation
 
-Install ESLint for your project.
+Install ESLint and TSLint (for now) for your project.
 
 ```shell
-npm i -D eslint
+npm i -D eslint tslint
 ```
 
 Install the `eslint-config-nwronski-rules` module.
