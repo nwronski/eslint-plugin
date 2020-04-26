@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/nwronski/eslint-config-rules/compare/v2.0.2...v2.0.3) (2020-04-26)
+
+
+### Bug Fixes
+
+* turn off capitalized-comments and class-methods-use-this ([b154bec](https://github.com/nwronski/eslint-config-rules/commit/b154bec2ad0048e8444c1b0dd326adfc1db4ac19))
+
 ### [2.0.2](https://github.com/nwronski/eslint-config-rules/compare/v2.0.1...v2.0.2) (2020-04-02)
 
 
