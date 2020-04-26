@@ -226,11 +226,8 @@
       "error",
       "always"
     ],
-    "capitalized-comments": [
-      "error",
-      "always"
-    ],
-    "class-methods-use-this": "error",
+    "capitalized-comments": "off",
+    "class-methods-use-this": "off",
     "comma-dangle": [
       "error",
       "always-multiline"

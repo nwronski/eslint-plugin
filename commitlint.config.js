@@ -10,6 +10,8 @@ module.exports = {
         // Global scopes
         '*',
         'release',
+        'angular',
+        'react',
       ],
     ],
     'scope-empty': [

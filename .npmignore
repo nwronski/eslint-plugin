@@ -1,2 +1,4 @@
 commitlint.config.js
 .history
+.envrc
+.tool-versions
