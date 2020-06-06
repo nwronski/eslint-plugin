@@ -2,7 +2,7 @@
   "name": "eslint-config-nwronski-rules",
   "version": "2.0.3",
   "description": "ESLint rule configuration for JavaScript projects",
-  "main": ".eslintrc.json",
+  "main": "index.js",
   "keywords": [
     "eslint"
   ],
@@ -10,7 +10,10 @@
   "bugs": {
     "url": "https://github.com/nwronski/eslint-config-rules/issues"
   },
-  "author": "Nick Wronski <nwronski@gmail.com> (https://github.com/nwronski)",
+  "author": {
+    "name": "Nicholas Wronski",
+    "url": "https://github.com/nwronski"
+  },
   "license": "MIT",
   "standard-version": {
     "scripts": {
@@ -28,24 +31,31 @@
     "postrelease": "conventional-github-releaser -p angular"
   },
   "peerDependencies": {
-    "eslint": "^6.8.0",
-    "tslint": "^6.1.1"
+    "eslint": "*",
+    "tslint": "*",
+    "typescript": "*"
+  },
+  "optionalDependencies": {
+    "@angular-eslint/eslint-plugin": "*",
+    "@angular-eslint/template-parser": "*",
+    "@angular-eslint/eslint-plugin-template": "*",
+    "eslint-plugin-jsx-a11y": "~6",
+    "eslint-plugin-react": "~7",
+    "eslint-plugin-react-hooks": "~3",
+    "eslint-plugin-jest": "~23"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
     "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsdoc": "^22.1.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^3.0.0"
+    "eslint-plugin-jsdoc": "^27.0.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "conventional-github-releaser": "^3.1.3",
-    "husky": "^4.2.3",
-    "standard-version": "^7.1.0"
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.0"
   }
 }
