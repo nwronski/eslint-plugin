@@ -54,15 +54,59 @@ module.exports = {
     '@typescript-eslint/await-thenable': 'error',
     '@typescript-eslint/ban-types': 'error',
     'camelcase': 'off',
-    '@typescript-eslint/camelcase': [
+    '@typescript-eslint/naming-convention': [
       'error',
       {
-        properties: 'always',
-        genericType: 'always',
-        ignoreDestructuring: false
+        selector: 'default',
+        format: [ 'camelCase' ]
+      },
+      {
+        selector: 'variableLike',
+        format: [ 'camelCase' ]
+      },
+      {
+        selector: 'interface',
+        format: [ 'PascalCase' ],
+        prefix: [ 'I' ]
+      },
+      {
+        selector: 'variable',
+        format: [ 'camelCase', 'UPPER_CASE' ]
+      },
+      {
+        selector: 'parameter',
+        format: [ 'camelCase' ],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'memberLike',
+        modifiers: [ 'private' ],
+        format: [ 'camelCase' ],
+        leadingUnderscore: 'require'
+      },
+      {
+        selector: 'enumMember',
+        format: [ 'PascalCase' ]
+      },
+      {
+        selector: 'function',
+        format: [ 'PascalCase', 'camelCase' ]
+      },
+      {
+        selector: 'variable',
+        types: [ 'function' ],
+        format: [ 'PascalCase', 'camelCase' ]
+      },
+      {
+        selector: 'typeLike',
+        format: [ 'PascalCase' ]
+      },
+      {
+        selector: 'typeParameter',
+        format: [ 'PascalCase' ],
+        prefix: [ 'T' ]
       }
     ],
-    '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -70,12 +114,6 @@ module.exports = {
       'off',
       {
         accessibility: 'explicit'
-      }
-    ],
-    '@typescript-eslint/interface-name-prefix': [
-      'error',
-      {
-        prefixWithI: 'always'
       }
     ],
     '@typescript-eslint/member-delimiter-style': [
@@ -200,7 +238,7 @@ module.exports = {
       'error',
       'always'
     ],
-    '@typescript-eslint/strict-boolean-expressions': 'error',
+    '@typescript-eslint/strict-boolean-expressions': 'warn',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/type-annotation-spacing': 'error',
     '@typescript-eslint/unbound-method': 'off',

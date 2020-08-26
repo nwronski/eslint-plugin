@@ -10,6 +10,9 @@ module.exports = {
         // Global scopes
         '*',
         'release',
+
+        // Configuration presets
+        'base',
         'angular',
         'react',
       ],
