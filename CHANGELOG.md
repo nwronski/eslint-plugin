@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/nwronski/eslint-plugin/compare/v3.0.0...v3.0.1) (2020-08-26)
+
+
+### Bug Fixes
+
+* **base:** remove deprecated naming rules ([af305eb](https://github.com/nwronski/eslint-plugin/commit/af305eb65517e06a78b32307ba470535bf057874))
+
 ## [3.0.0](https://github.com/nwronski/eslint-plugin/compare/v2.0.3...v3.0.0) (2020-08-26)
 
 
