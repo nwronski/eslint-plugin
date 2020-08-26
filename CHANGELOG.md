@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/nwronski/eslint-plugin/compare/v2.0.3...v3.0.0) (2020-08-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* npm package is now named `eslint-plugin-nwronski` and repository is now named `nwronski/eslint-plugin`
+
+### Features
+
+* split configurations for typescript, react, and angular ([#2](https://github.com/nwronski/eslint-plugin/issues/2)) ([1643972](https://github.com/nwronski/eslint-plugin/commit/1643972e876143721521e3ca534be6e0467893ef))
+
 ### [2.0.3](https://github.com/nwronski/eslint-plugin/compare/v2.0.2...v2.0.3) (2020-04-26)
 
 
