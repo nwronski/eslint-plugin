@@ -1,4 +1,4 @@
-# eslint-config-nwronski-rules
+# eslint-plugin-nwronski
 
 This repo contains the linting rules for my projects that use ESLint with TypeScript.
 
@@ -12,10 +12,10 @@ yarn add --dev eslint tslint
 
 ### Default (TypeScript/Node)
 
-Install the `eslint-config-nwronski-rules` module and dependencies
+Install the `eslint-plugin-nwronski` module and dependencies
 
 ```shell
-yarn add --dev eslint-config-nwronski-rules
+yarn add --dev eslint-plugin-nwronski
 ```
 
 Create a `.eslintrc.json` file in the root folder of your project and add the following:
@@ -24,7 +24,7 @@ Create a `.eslintrc.json` file in the root folder of your project and add the fo
 
 ```json
 {
-  "extends": "nwronski-rules:base",
+  "extends": "plugin:nwronski/base",
   "parserOptions": {
     "project": "./tsconfig.json"
   }
@@ -45,10 +45,10 @@ Add `lint` script to your `package.json`:
 
 ### Angular (TypeScript/Jasmine/Protractor)
 
-Install the `eslint-config-nwronski-rules` module and dependencies
+Install the `eslint-plugin-nwronski` module and dependencies
 
 ```shell
-yarn add --dev @angular-eslint/eslint-plugin @angular-eslint/template-parser @angular-eslint/eslint-plugin-template @angular-eslint/builder eslint-config-nwronski-rules
+yarn add --dev @angular-eslint/eslint-plugin @angular-eslint/template-parser @angular-eslint/eslint-plugin-template @angular-eslint/builder eslint-plugin-nwronski
 ```
 
 Create a `.eslintrc.json` file in the root folder of your project and add the following:
@@ -57,7 +57,7 @@ Create a `.eslintrc.json` file in the root folder of your project and add the fo
 
 ```json
 {
-  "extends": "nwronski-rules:angular",
+  "extends": "plugin:nwronski/angular",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -120,15 +120,14 @@ Add ESLint configuration for Angular CLI to your `angular.json`:
     }
   }
 }
-
 ```
 
 ### React (TypeScript/Jest)
 
-Install the `eslint-config-nwronski-rules` module and dependencies
+Install the `eslint-plugin-nwronski` module and dependencies
 
 ```shell
-yarn add --dev eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-jest eslint-config-nwronski-rules
+yarn add --dev eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-jest eslint-plugin-nwronski
 ```
 
 Create a `.eslintrc.json` file in the root folder of your project and add the following:
@@ -137,12 +136,11 @@ Create a `.eslintrc.json` file in the root folder of your project and add the fo
 
 ```json
 {
-  "extends": "nwronski-rules:react",
+  "extends": "plugin:nwronski/react",
   "parserOptions": {
     "project": "./tsconfig.json"
   }
 }
-
 ```
 
 Add `lint` script to your `package.json`:
@@ -175,7 +173,7 @@ yarn add --dev lint-staged
 
 ```json
 {
-  "*.ts": [
+  "*.{ts,tsx}": [
     "eslint --fix"
   ]
 }
