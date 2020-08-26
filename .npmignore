@@ -2,3 +2,6 @@ commitlint.config.js
 .history
 .envrc
 .tool-versions
+yarn.lock
+package-lock.json
+.gitignore
