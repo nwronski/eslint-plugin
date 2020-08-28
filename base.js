@@ -103,8 +103,11 @@ module.exports = {
       },
       {
         selector: 'typeParameter',
-        format: [ 'PascalCase' ],
-        prefix: [ 'T' ]
+        format: [ 'PascalCase' ]
+      },
+      {
+        selector: 'property',
+        format: [ 'PascalCase', 'camelCase' ]
       }
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',

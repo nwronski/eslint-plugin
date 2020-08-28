@@ -321,6 +321,15 @@ module.exports = {
     'jsx-a11y/role-has-required-aria-props': 'warn',
     'jsx-a11y/role-supports-aria-props': 'warn',
     'jsx-a11y/scope': 'warn',
-    'jsx-a11y/no-static-element-interactions': 'warn'
+    'jsx-a11y/no-static-element-interactions': 'warn',
+
+    'jest/valid-expect': [
+      'warn',
+      {
+        alwaysAwait: true,
+        minArgs: 1,
+        maxArgs: 1,
+      },
+    ],
   }
 };
