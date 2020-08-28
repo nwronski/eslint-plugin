@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/nwronski/eslint-plugin/compare/v3.0.1...v3.0.2) (2020-08-28)
+
+
+### Bug Fixes
+
+* **base:** remove prefix req for type parameter ([b3bce18](https://github.com/nwronski/eslint-plugin/commit/b3bce18789abb3bd1f0978b9731c82c4fbbd2d80))
+
 ### [3.0.1](https://github.com/nwronski/eslint-plugin/compare/v3.0.0...v3.0.1) (2020-08-26)
 
 
