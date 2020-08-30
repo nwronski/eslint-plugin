@@ -58,56 +58,88 @@ module.exports = {
       'error',
       {
         selector: 'default',
-        format: [ 'camelCase' ]
+        format: [
+          'camelCase'
+        ]
       },
       {
         selector: 'variableLike',
-        format: [ 'camelCase' ]
+        format: [
+          'PascalCase',
+          'camelCase',
+          'UPPER_CASE'
+        ]
       },
       {
         selector: 'interface',
-        format: [ 'PascalCase' ],
-        prefix: [ 'I' ]
-      },
-      {
-        selector: 'variable',
-        format: [ 'camelCase', 'UPPER_CASE' ]
+        format: [
+          'PascalCase'
+        ],
+        prefix: [
+          'I'
+        ]
       },
       {
         selector: 'parameter',
-        format: [ 'camelCase' ],
+        format: [
+          'camelCase'
+        ],
         leadingUnderscore: 'allow'
       },
       {
         selector: 'memberLike',
-        modifiers: [ 'private' ],
-        format: [ 'camelCase' ],
+        format: [
+          'camelCase',
+          'UPPER_CASE'
+        ],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'memberLike',
+        modifiers: [
+          'private'
+        ],
+        format: [
+          'camelCase',
+          'UPPER_CASE'
+        ],
         leadingUnderscore: 'require'
       },
       {
         selector: 'enumMember',
-        format: [ 'PascalCase' ]
+        format: [
+          'PascalCase',
+          'UPPER_CASE'
+        ]
       },
       {
         selector: 'function',
-        format: [ 'PascalCase', 'camelCase' ]
+        format: [
+          'PascalCase',
+          'camelCase'
+        ]
       },
       {
         selector: 'variable',
-        types: [ 'function' ],
-        format: [ 'PascalCase', 'camelCase' ]
+        'types': [
+          'function'
+        ],
+        format: [
+          'PascalCase',
+          'camelCase'
+        ]
       },
       {
         selector: 'typeLike',
-        format: [ 'PascalCase' ]
+        format: [
+          'PascalCase'
+        ]
       },
       {
         selector: 'typeParameter',
-        format: [ 'PascalCase' ]
-      },
-      {
-        selector: 'property',
-        format: [ 'PascalCase', 'camelCase' ]
+        format: [
+          'PascalCase'
+        ]
       }
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',

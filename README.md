@@ -59,7 +59,7 @@ Create a `.eslintrc.json` file in the root folder of your project and add the fo
 {
   "extends": "plugin:nwronski/angular",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.eslint.json"
   },
   "rules": {
     "@angular-eslint/component-selector": [
@@ -79,6 +79,23 @@ Create a `.eslintrc.json` file in the root folder of your project and add the fo
       }
     ]
   }
+}
+```
+
+Create a `tsconfig.eslint.json` file in the root folder of your project and add the following:
+
+`tsconfig.eslint.json`
+
+```json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "e2e"
+  ]
 }
 ```
 
@@ -108,8 +125,9 @@ Add ESLint configuration for Angular CLI to your `angular.json`:
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "eslintConfig": ".eslintrc.json",
-            "tsConfig": [
-              "tsconfig.build.json"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.component.html"
             ],
             "exclude": [
               "**/node_modules/**"
