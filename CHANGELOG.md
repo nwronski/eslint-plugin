@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.3](https://github.com/nwronski/eslint-plugin/compare/v3.0.2...v3.0.3) (2020-08-30)
+
+
+### Bug Fixes
+
+* **angular:** broken angular configuration for html files WIP ([20fb523](https://github.com/nwronski/eslint-plugin/commit/20fb523ff28e5774495e09ed09cb224404f06636))
+
 ### [3.0.2](https://github.com/nwronski/eslint-plugin/compare/v3.0.1...v3.0.2) (2020-08-28)
 
 
