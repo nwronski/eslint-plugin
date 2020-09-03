@@ -59,16 +59,10 @@ module.exports = {
       {
         selector: 'default',
         format: [
-          'camelCase'
-        ]
-      },
-      {
-        selector: 'variableLike',
-        format: [
-          'PascalCase',
           'camelCase',
           'UPPER_CASE'
-        ]
+        ],
+        trailingUnderscore: 'forbid'
       },
       {
         selector: 'interface',
@@ -95,21 +89,33 @@ module.exports = {
         leadingUnderscore: 'allow'
       },
       {
-        selector: 'memberLike',
-        modifiers: [
-          'private'
-        ],
+        selector: 'property',
         format: [
           'camelCase',
-          'UPPER_CASE'
+          'UPPER_CASE',
+          'PascalCase'
         ],
-        leadingUnderscore: 'require'
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'property',
+        format: null,
+        filter: {
+          regex: '^__',
+          match: true
+        }
       },
       {
         selector: 'enumMember',
         format: [
-          'PascalCase',
+          'StrictPascalCase',
           'UPPER_CASE'
+        ]
+      },
+      {
+        selector: 'class',
+        format: [
+          'PascalCase'
         ]
       },
       {
@@ -121,7 +127,7 @@ module.exports = {
       },
       {
         selector: 'variable',
-        'types': [
+        types: [
           'function'
         ],
         format: [
@@ -224,10 +230,10 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'warn',
     '@typescript-eslint/no-parameter-properties': 'off',
     '@typescript-eslint/no-this-alias': 'error',
-    "@typescript-eslint/no-unsafe-assignment": "warn",
-    "@typescript-eslint/no-unsafe-call": "warn",
-    "@typescript-eslint/no-unsafe-member-access": "warn",
-    "@typescript-eslint/no-unsafe-return": "warn",
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
     'no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-expressions': [
       'error',
